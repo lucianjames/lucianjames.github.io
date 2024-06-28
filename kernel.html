@@ -30,13 +30,12 @@
                 <div class="row g-0">
                     <div class="col-md-6">
                         <div class="text-white p-4 p-md-5">
-                            <h2 class="fw-bold text-white mb-3">Recursive trees</h2>
-                            <p class="mb-4">A quick OpenGL demo</p>
-                            <div class="my-3" style="text-align: center;"><a class="btn btn-primary btn-lg me-2" role="button" href="https://github.com/LJ3D/recursiveTrees">View on github</a></div>
-                            <div class="my-3" style="text-align: center;"><a class="btn btn-primary btn-lg me-2" role="button" href="https://www.youtube.com/watch?v=xZl0ai1bFQc">View demonstration on youtube</a></div>
+                            <h2 class="fw-bold text-white mb-3">Barebones OS dev</h2>
+                            <p class="mb-4">While very far from being a complete and functional kernel, I have developed a bootable system that has the ability to draw text directly to the hardware framebuffer</p>
+                            <div class="my-3" style="text-align: center;"><a class="btn btn-primary btn-lg me-2" role="button" href="https://www.github.com/lucianjames/vbe_bare_bones">View on github</a></div>
                         </div>
                     </div>
-                    <div class="col-md-6 order-first order-md-last" style="min-height: 250px;"><img class="w-100 h-100 fit-cover" src="assets/img/2023-01-14-16-58-52.png"></div>
+                    <div class="col-md-6 order-first order-md-last" style="min-height: 250px;"><img class="w-100 h-100 fit-cover" src="assets/img/28-06-2024-16-58-25.png"></div>
                 </div>
             </div>
         </div>
@@ -50,7 +49,7 @@
                         <div class="bs-icon-lg bs-icon-rounded bs-icon-primary d-flex flex-shrink-0 justify-content-center align-items-center d-inline-block mb-3 bs-icon lg"><i class="icon ion-code"></i></div>
                         <div class="px-3">
                             <h4>Languages/software used</h4>
-                            <p>C++, OpenGL via my library "LJGL"</p>
+                            <p>C, NASM, GRUB</p>
                         </div>
                     </div>
                 </div>
@@ -59,7 +58,7 @@
                         <div class="bs-icon-lg bs-icon-rounded bs-icon-primary d-flex flex-shrink-0 justify-content-center align-items-center d-inline-block mb-3 bs-icon lg"><i class="icon ion-ios-calendar"></i></div>
                         <div class="px-3">
                             <h4>Date of completion</h4>
-                            <p>15th Jan. May make some improvements at some point</p>
+                            <p>Still a work in progress!</p>
                         </div>
                     </div>
                 </div>
@@ -70,7 +69,7 @@
                         <div class="bs-icon-lg bs-icon-rounded bs-icon-primary d-flex flex-shrink-0 justify-content-center align-items-center d-inline-block mb-3 bs-icon lg"><i class="icon ion-ios-gear"></i></div>
                         <div class="px-3">
                             <h4>The details</h4>
-                            <p>This project was quickly put together in a Friday afternoon computer science lesson, and then refined and improved a bit the day after.<br>I started by just generating two dimensional patterns, then expanded into three dimensional patterns.<br>This program takes a while to initially generate the vertices (20 seconds or so), but once everything is copied to the GPU, I can achieve easily over 60 frames per second at a resolution of 1440p using my Nvidia quadro p5000 when rendering&nbsp;44739242 (44.7 million!) vertices.</p>
+                            <p>Based on resources from wiki.osdev.org amongst others, this kernel can boot and render text (or whatever you wish) to the screen via the framebuffer.<br>While I am yet to implement real OS functionality (memory management, etc), development has already been a great insight into developing low level standalone software. The kernel is primarily written in C (without access to the standard library) with NASM used for the very start of execution after GRUB hands over to my code.</p>
                         </div>
                     </div>
                 </div>
